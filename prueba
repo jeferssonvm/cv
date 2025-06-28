@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `users_profile` (
   `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
   `user_id` BIGINT NOT NULL,
   `additional_info` TEXT,
-  FOREIGN KEY (`user_id`) REFERENCES `users`(`id`)
 );
 
 -- Tabla de educaciones
@@ -41,7 +40,6 @@ CREATE TABLE IF NOT EXISTS `educations` (
   `soft_skills` INT,
   `hard_skills` INT,
   `programming_languages` INT,
-  FOREIGN KEY (`user_id`) REFERENCES `users`(`id`)
 );
 
 -- Tabla de proyectos
