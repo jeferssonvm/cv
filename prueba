@@ -1,0 +1,96 @@
+-- Tabla de usuarios
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
+  `username` VARCHAR(100) NOT NULL UNIQUE,
+  `first_name` VARCHAR(100) NOT NULL,
+  `middle_name` VARCHAR(100) NOT NULL,
+  `first_surname` VARCHAR(100) NOT NULL,
+  `second_surname` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(150) NOT NULL,
+  `nationality` VARCHAR(100) NOT NULL,
+  `link_linkedin` VARCHAR(255),
+  `link_facebook` VARCHAR(255),
+  `languages` INT,
+  `project` INT,
+  `experience` INT,
+  `educations` INT,
+  `my_description` TEXT
+);
+
+-- Información adicional del usuario
+CREATE TABLE IF NOT EXISTS `users_profile` (
+  `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
+  `user_id` BIGINT NOT NULL,
+  `additional_info` TEXT,
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`id`)
+);
+
+-- Tabla de educaciones
+CREATE TABLE IF NOT EXISTS `educations` (
+  `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
+  `user_id` BIGINT NOT NULL,
+  `name` VARCHAR(150) NOT NULL,
+  `institution_name` VARCHAR(150) NOT NULL,
+  `degree` VARCHAR(150) NOT NULL,
+  `start_date` DATE NOT NULL,
+  `end_date` DATE,
+  `description` TEXT,
+  `link_img` VARCHAR(255),
+  `is_visible` BOOLEAN,
+  `finalized` BOOLEAN,
+  `soft_skills` INT,
+  `hard_skills` INT,
+  `programming_languages` INT,
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`id`)
+);
+
+-- Tabla de proyectos
+CREATE TABLE IF NOT EXISTS `project` (
+  `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(150) NOT NULL,
+  `description` TEXT,
+  `link_img` VARCHAR(255),
+  `soft_skills` INT,
+  `hard_skills` INT,
+  `link_github` VARCHAR(255),
+  `role` VARCHAR(100),
+  `is_visible` BOOLEAN NOT NULL,
+  `user_id` INT NOT NULL,
+  `category` VARCHAR(100),
+  `link_repository` VARCHAR(255),
+  `programming_languages` INT NOT NULL,
+  `start_date` DATE NOT NULL,
+  `end_date` DATE
+  
+);
+
+-- Tabla de idiomas
+CREATE TABLE IF NOT EXISTS `languages` (
+  `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(100) NOT NULL,
+  `level` VARCHAR(50) NOT NULL,
+  `is_native_language` BOOLEAN NOT NULL
+);
+
+-- Tabla de empleos
+CREATE TABLE IF NOT EXISTS `jobs` (
+  `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(150) NOT NULL,
+  `role` VARCHAR(100) NOT NULL,
+  `start_date` DATE NOT NULL,
+  `end_date` DATE,
+  `description` TEXT,
+  `is_visible` BOOLEAN
+);
+
+-- Habilidades duras
+CREATE TABLE IF NOT EXISTS `hard_skills` (
+  `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(100) NOT NULL
+);
+
+-- Habilidades blandas
+CREATE TABLE IF NOT EXISTS `soft_skills` (
+  `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(100) NOT NULL
+);
