@@ -26,7 +26,7 @@ export default function header() {
                     </div>
           }
   return (
-    <header className="header"> 
+    <header className={`header ${isOpen ? 'header--open' : ''}`}>
         {navInfo}
     </header>
   )

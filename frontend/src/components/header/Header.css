@@ -2,9 +2,19 @@
     background-color: #242424;
     display: flex;
     justify-content: space-around;
-    align-content: end;
+    align-content: center;
     flex-wrap: wrap;
     
+    
+}
+.header--open{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(36, 36, 36, 0.9);
 }
 .icon{
     width: 30px;
