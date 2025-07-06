@@ -1,0 +1,32 @@
+/* #FFFCF2
+#CCC5B9
+#403D39
+#252422
+#EB5E28 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-background: #252422;   /* Color base principal de fondo */
+  --color-text: #FFFCF2;         /* Texto claro sobre fondo oscuro */
+  --color-secondary: #CCC5B9;    /* Colores secundarios (grises) */
+  --color-tertiary: #403D39;     /* Alternativo para secciones */
+  --color-accent: #EB5E28;       /* Color acento para botones, links, etc */
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text); /* Aplica a todo el texto por defecto */
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+
+
+
+}
+h1, h2, h3, h4, h5, h6 {
+
+  font-weight: bold;
+  
+}
