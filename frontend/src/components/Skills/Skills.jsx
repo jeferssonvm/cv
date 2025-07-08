@@ -7,14 +7,14 @@ import { RiFileExcel2Line } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { SiPandas } from "react-icons/si";
 
-
+import './Skills.css';
 
 
 export default function Skills() {
   return (
-    <div className='cv-skills content'>
-        skills
-
+    <section className='skills'>
+      <h2>Skill</h2>
+      <div className='skills--icon'>
         <FaPython />
         <BsFiletypeSql />
         <FaJsSquare />
@@ -23,7 +23,9 @@ export default function Skills() {
         <RiFileExcel2Line />
         <SiPandas />
 
+      </div>
+        
 
-    </div>
+    </section>
   )
 }

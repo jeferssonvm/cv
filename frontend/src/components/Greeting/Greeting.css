@@ -1,0 +1,6 @@
+.Greeting{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: wheat
+    
+}

@@ -13,14 +13,14 @@ export default function header() {
                       <picture>
                           <img src="https://img-database.jeferssonvm97.com/img_projects/Logo/jvm_logo-gris.png" alt="Logo" style={{ width: '50px' }} />
                       </picture>
-                      <picture className='icon'>
-                        <IoMenuSharp  style={{ color: "red" }}  onClick={() => setIsOpen(true)} />
+                      <picture className='container-logo'>
+                        <IoMenuSharp className='icon__menu icon__menu--open'  onClick={() => setIsOpen(true)} />
                       </picture>
                     </>
           }else {
             navInfo=<div className='menu'>
-                      <picture className='icon'>
-                        <IoClose  onClick={() => setIsOpen(false)}/>
+                      <picture className='container-logo'>
+                        <IoClose className='icon__menu icon__menu--close'  onClick={() => setIsOpen(false)}/>
                       </picture>
                       <NavHeader/>
                     </div>
@@ -29,5 +29,11 @@ export default function header() {
     <header className={`header ${isOpen ? 'header--open' : ''}`}>
         {navInfo}
     </header>
+    // <header className='header'>
+    //   <picture className='container-logo'>
+    //     <img className='logo' src="https://img-database.jeferssonvm97.com/img_projects/Logo/jvm_logo-gris.png" alt="Logo"  />
+    //   </picture>
+    //   <NavHeader></NavHeader>
+    // </header>
   )
 }

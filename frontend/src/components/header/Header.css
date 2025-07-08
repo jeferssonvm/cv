@@ -4,8 +4,20 @@
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
+    background-color: red;
     
     
+}
+.container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        width: 123px;
+        height: 42px;
+        
+    }
+
 }
 .header--open{
     position: fixed;
@@ -25,6 +37,7 @@
         color: white;
         width: 100%;
         height: 100%;
+        background-color: red;
     }
 }
 .menu{
@@ -37,4 +50,11 @@
         margin: 0 0 0 auto ;
         display: flex;
     }
+}
+.icon__menu{
+    width: 30px;
+    height: 30px;
+    
+    color: var(--color-text);
+    cursor: pointer;
 }

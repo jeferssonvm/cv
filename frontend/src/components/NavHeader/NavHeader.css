@@ -1,12 +1,34 @@
+
 .nav-header{
-    width: 100vw;
+    width: 368px;
     ul{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         gap: 1rem;
         padding: 0.5rem 0;
+        font-size: 2.0rem
     }
+}
+
+/* width: 368px; */
+/* 511px */
+/* justify-content: space-around;  corte 502 px */
+
+@media (min-width: 511px) {
+.nav-header{
+    width: clamp(448px, 50%, 550px);
+    background-color: tomato;
+    ul{
+
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem 0;
+        ;
+    }
+}
 }

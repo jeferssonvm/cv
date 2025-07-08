@@ -1,0 +1,35 @@
+.content-jobs{
+    
+    padding: 0 16px;
+    margin: 28px 0;
+
+    h2{
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+.job{
+    
+    margin: 8px auto;
+    padding: 0 0 4px;
+    .job--date{
+        font-size: 1.2rem;
+        font-weight: 200;
+        
+    }
+    .job--title{
+        margin: 0;
+        padding: 0;
+    }
+    .job--description{
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin: 0 0 10px 6px;
+
+    }
+    .job--company{
+     font-weight: 500;
+     line-height: 1.6rem;
+     margin: 0 0 8px 4px;
+    }
+}
