@@ -55,18 +55,35 @@ const listcard = ejemplo.map(project => {
             <img src={project.link_img} alt="imagen" />
         </picture>
         <h3 className='card--title'>{project.name}</h3>
-        <p className='card--description'>{project.description}</p>
         <div className='card--links'>
             <a href=""><FaGithubSquare /></a>
             <a href=""><FaEye /></a>
         </div>
+        {/* <p className='card--description'>{project.description}</p> */}
     </section>
   );
 });
-
+const listcard2 = ejemplo.map(project => {
+  if (!project.is_visible) return null; // Skip hidden projects
+  return (
+    <section className='card'>
+        <picture className='card--img'>
+            <img src={project.link_img} alt="imagen" />
+        </picture>
+        <h3 className='card--title'>{project.name}</h3>
+        <div className='card--links'>
+            <a href=""><FaGithubSquare /></a>
+            <a href=""><FaEye /></a>
+        </div>
+        {/* <p className='card--description'>{project.description}</p> */}
+    </section>
+  );
+});
   return (
     <>
       {listcard}
+      {listcard2}
     </>
   )
 }
+620

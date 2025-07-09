@@ -24,6 +24,10 @@
 html{
     font-size: 62.5%;
 }
+.root{
+ max-width: 938px;
+ margin: 0 auto;
+}
 p, button, a,div{
   font-weight: normal;
   font-size: 1.6rem; /* Tamaño de fuente base */

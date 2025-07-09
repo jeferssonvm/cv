@@ -1,8 +1,19 @@
 .projects{
-    width: 100vw;
+    width: 100%;
     padding: 0 16px;
     margin: 22px 0;
+
 }
 .projects--title{
     margin: 26px 0;
+}
+.projects--content{
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-content: center;
+
+
 }

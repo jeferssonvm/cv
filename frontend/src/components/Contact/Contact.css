@@ -6,3 +6,23 @@
     align-items: center;
     text-align: center;
 }
+.footer{
+    .footer--title{
+        font-size: 2rem;
+    }
+}
+.contact-information{
+    .contact-information--title{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .contact-information--address{
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+}
+.copyright{
+    font-size: 0.875rem;
+    color: var(--color-secondary);
+    margin-top: 1rem;
+}
