@@ -20,7 +20,6 @@
 @media (min-width: 511px) {
 .nav-header{
     width: clamp(448px, 50%, 550px);
-    background-color: tomato;
     ul{
 
         display: flex;

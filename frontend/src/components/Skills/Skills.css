@@ -3,7 +3,7 @@
     margin: 28px 0;
     
     /* margin: 22p 16px; */
-    border-block-start: 1px solid var(--color-secondary);
+    
     padding: 16px; 
     .skills__section-title{
         text-align: center;
@@ -17,10 +17,11 @@
     }
     .skills__group-title{
         font-size: 2.0rem;
-        margin: 10px 0;
+        margin: 20px 0;
     }
     .skills__category-title{
         font-size: 1.6rem;
+        margin: 26px 0;
         }
     .skills__icons{
         margin: 15px 0;
@@ -28,31 +29,48 @@
         flex-wrap: wrap;
         justify-content: space-around;
         svg{
-            color: #FFFCF2;
+            /* color: #FFFCF2; */
             font-size: 4.0rem;
-            :hover{
-                color: #EB5E28;
-                cursor: pointer;
-            }
         }
     
 }
 }
-.skills__icons svg[title="Python"] {
-  color: #3776AB;
+
+/* Hover por tecnología */
+.icon.python:hover {
+  fill: #3776AB;
 }
-.skills__icons svg[title="SQL"] {
-  color: #e38c00;
+
+.icon.sql:hover {
+  fill: #00618A;
 }
-.skills__icons svg[title="JavaScript"] {
-  color: #f7df1e;
+
+.icon.javascript:hover {
+  fill: #F7DF1E;
 }
-.skills__icons svg[title="Pandas"] {
-  color: #150458;
+
+.icon.html:hover {
+  fill: #E34C26;
 }
-.skills__icons svg[title="NumPy"] {
-  color: #013243;
+
+.icon.css:hover {
+  fill: #264de4;
 }
-.skills__icons svg[title="Excel"] {
-  color: #217346;
+
+.icon.pandas:hover {
+  fill: #150458;
+}
+
+.icon.numpy:hover {
+  fill: #013243;
+}
+
+.icon.excel:hover {
+  fill: #217346;
+}
+.icon.scikit:hover {
+  fill: #f7931e;
+}
+.icon.react:hover {
+  fill: #61DBFB; 
 }

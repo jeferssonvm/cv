@@ -13,7 +13,7 @@ export default function Profile() {
         <AboutMe/>
         <Skills/>
         <Projects/>
-        <Jobs/>
+        {/* <Jobs/> */}
         <Contact/>
     </div>
   )

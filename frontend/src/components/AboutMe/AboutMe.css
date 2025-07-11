@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     
-    border-block-start: 1px solid var(--color-secondary);
+    
 }
 .aboutme--text{
     margin: 0 4px 0 8px;

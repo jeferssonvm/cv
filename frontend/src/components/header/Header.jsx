@@ -20,7 +20,7 @@ export default function Header() {
       <header className={`header ${isOpen ? 'header--open' : ''}`}>
         {!isOpen ? (
           <>
-            <picture>
+            <picture className='personal_logo'>
               <img
                 src="https://img-database.jeferssonvm97.com/img_projects/Logo/jvm_logo-gris.png"
                 alt="Logo"
