@@ -6,9 +6,9 @@ export default function Greeting() {
   return (
     <section className='greeting'>
             <div className='greeting__text'>
-              <h2>Welcome to my portfolio!</h2>
-              <p>Explore my projects and skills.</p>
-              <p>Feel free to contact me for any inquiries.</p>
+              <h2>¡Bienvenido a mi portafolio!</h2>
+              <p>Explora mis proyectos y habilidades.</p>
+              <p>No dudes en contactarme para cualquier consulta.</p>
             </div>
             <section class="button-container greeting__links">
               <button>

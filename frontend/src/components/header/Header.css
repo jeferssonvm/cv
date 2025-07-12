@@ -13,13 +13,14 @@
     
     .logo{
         width: 123px;
-        height: 42px;
-        
     }
 
 }
 .personal_logo{
-   grid-column: 1 / 2;   
+   grid-column: 1 / 2; 
+   img{
+    width: 60px;
+   }  
 }
 
 .header--open{
@@ -93,8 +94,10 @@
         .nav-header{
             justify-self:end;
             grid-column: 2/3;
+            align-content: center;
         }
         .container-logo{
+            width: 60px;
             grid-column: 1/2;
             margin-inline-start: 16px;
         }

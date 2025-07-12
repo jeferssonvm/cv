@@ -13,7 +13,7 @@ import './Skills.css';
 
 export default function Skills() {
   return (
-    <section className="skills">
+    <section className="skills"id='skills'>
       <h2 className="skills__section-title">Skills</h2>
 
       <section className="skills__group skills__group--data">

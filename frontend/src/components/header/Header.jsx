@@ -24,7 +24,6 @@ export default function Header() {
               <img
                 src="https://img-database.jeferssonvm97.com/img_projects/Logo/jvm_logo-gris.png"
                 alt="Logo"
-                style={{ width: '50px' }}
               />
             </picture>
             <picture className='container-logo'>

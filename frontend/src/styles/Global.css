@@ -24,9 +24,7 @@
 html{
     font-size: 62.5%;
 }
-body{ 
-  background-color: var(--color-secondary);
-}
+
 .root{
  max-width: 938px;
  margin: 0 auto;
@@ -37,7 +35,7 @@ p, button, a,div{
   font-size: 1.6rem; /* Tamaño de fuente base */
 }
 body {
-  background-color: var(--color-tertiary);
+  
   color: var(--color-text); /* Aplica a todo el texto por defecto */
   margin: 0;
   padding: 0;

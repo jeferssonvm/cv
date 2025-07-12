@@ -78,3 +78,122 @@ INSERT INTO programming_languages (name, type, extension) VALUES
   ('Ciberseguridad'),
   ('Cloud Computing'),
   ('Internet de las Cosas (IoT)');
+
+
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 1, id FROM hard_skills WHERE name = 'Desarrollo Backend';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 2, id FROM hard_skills WHERE name = 'Desarrollo Backend';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 3, id FROM hard_skills WHERE name = 'Desarrollo Frontend';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 4, id FROM hard_skills WHERE name = 'Desarrollo Frontend';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 5, id FROM hard_skills WHERE name = 'Desarrollo Frontend';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 6, id FROM hard_skills WHERE name = 'Bases de Datos';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 7, id FROM hard_skills WHERE name = 'Desarrollo Web';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 8, id FROM hard_skills WHERE name = 'Bases de Datos';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 9, id FROM hard_skills WHERE name = 'Bases de Datos';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 10, id FROM hard_skills WHERE name = 'Análisis de Datos';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 11, id FROM hard_skills WHERE name = 'Bases de Datos';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 12, id FROM hard_skills WHERE name = 'Análisis de Datos';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 13, id FROM hard_skills WHERE name = 'Análisis de Datos';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 14, id FROM hard_skills WHERE name = 'Automatización';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 15, id FROM hard_skills WHERE name = 'Ciencia de Datos';
+INSERT INTO education_hard_skills (education_id, hard_skill_id)
+SELECT 16, id FROM hard_skills WHERE name = 'Ciencia de Datos';
+
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 1, id FROM programming_languages WHERE name = 'Node.js';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 2, id FROM programming_languages WHERE name = 'JavaScript';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 3, id FROM programming_languages WHERE name = 'React';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 4, id FROM programming_languages WHERE name = 'React';
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 4, id FROM programming_languages WHERE name = 'Next.js';  -- Por Vite.js
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 4, id FROM programming_languages WHERE name = 'CSS';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 5, id FROM programming_languages WHERE name = 'React';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 6, id FROM programming_languages WHERE name = 'SQL';
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 6, id FROM programming_languages WHERE name = 'MySQL';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 7, id FROM programming_languages WHERE name = 'JavaScript';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 8, id FROM programming_languages WHERE name = 'SQL';
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 8, id FROM programming_languages WHERE name = 'MySQL';
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 8, id FROM programming_languages WHERE name = 'SQLite'; -- MaríaDB as proxy
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 9, id FROM programming_languages WHERE name = 'SQL';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 10, id FROM programming_languages WHERE name = 'Excel';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 11, id FROM programming_languages WHERE name = 'SQL';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 12, id FROM programming_languages WHERE name = 'Excel';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 13, id FROM programming_languages WHERE name = 'Excel';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 14, id FROM programming_languages WHERE name = 'Excel';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 15, id FROM programming_languages WHERE name = 'Python';
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 15, id FROM programming_languages WHERE name = 'Pandas';
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 15, id FROM programming_languages WHERE name = 'NumPy';
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 15, id FROM programming_languages WHERE name = 'scikit-learn';
+
+INSERT INTO education_programming_languages (education_id, programming_language_id)
+SELECT 16, id FROM programming_languages WHERE name = 'Jupyter Notebook';
+
+
+
+INSERT INTO education_soft_skills (education_id, soft_skill_id)
+SELECT 10, id FROM soft_skills WHERE name = 'Gestión del tiempo';
+
+INSERT INTO education_soft_skills (education_id, soft_skill_id)
+SELECT 12, id FROM soft_skills WHERE name = 'Orientación a resultados';
+
+INSERT INTO education_soft_skills (education_id, soft_skill_id)
+SELECT 13, id FROM soft_skills WHERE name = 'Orientación a resultados';
+
+INSERT INTO education_soft_skills (education_id, soft_skill_id)
+SELECT 14, id FROM soft_skills WHERE name = 'Proactividad';
+
+INSERT INTO education_soft_skills (education_id, soft_skill_id)
+SELECT 15, id FROM soft_skills WHERE name = 'Capacidad de aprendizaje';
+
+INSERT INTO education_soft_skills (education_id, soft_skill_id)
+SELECT 16, id FROM soft_skills WHERE name = 'Capacidad de aprendizaje';

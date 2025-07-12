@@ -1,7 +1,7 @@
 
 .nav-header{
     width: 368px;
-    ul{
+    & ul{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -17,10 +17,34 @@
 /* 511px */
 /* justify-content: space-around;  corte 502 px */
 
-@media (min-width: 511px) {
+.nav-header ul li a {
+  position: relative;
+  text-decoration: none;
+  color: inherit; /* opcional, para heredar color del padre */
+  padding-bottom: 4px; /* espacio para la línea */
+  transition: color 0.3s ease;
+}
+
+.nav-header ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.nav-header ul li a:hover::after {
+  width: 100%;
+}
+
+
+@media (min-width: 598px) {
 .nav-header{
     width: clamp(448px, 50%, 550px);
-    ul{
+    & ul{
 
         display: flex;
         flex-wrap: nowrap;
